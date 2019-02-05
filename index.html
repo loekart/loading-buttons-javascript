@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading on Button</title>
+	<style type="text/css">
+		.custom{
+			width: 100px;
+			height: 30px;
+		}
+		#custom-loading{
+			width: 20px;
+			height: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function process(){
+			document.getElementById("myButton").disabled = true;
+			document.getElementById("myButton").innerHTML = "<img src='lib/gif/25.gif' id='custom-loading'>";
+		}
+	</script>
+</head>
+<body>
+	<button onclick="process()" class="custom" id="myButton">Submit</button>
+</body>
+</html>
